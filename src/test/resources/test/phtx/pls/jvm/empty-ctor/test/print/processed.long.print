@@ -1,0 +1,143 @@
+[LOAD_CTX_
+|	(modules =)
+|	(NODES:
+|	|	[USE_CTX_
+|	|	|	(modules = pht phtx/pls pht/jvm)
+|	|	|	(NODES:
+|	|	|	|	[CLS_
+|	|	|	|	|	(type = final class)
+|	|	|	|	|	(name = App)
+|	|	|	|	|	(parents = [java.lang.Object])
+|	|	|	|	|	[ANN_STATIC_
+|	|	|	|	|	|	[DEFN_
+|	|	|	|	|	|	|	(type = method)
+|	|	|	|	|	|	|	(name = main)
+|	|	|	|	|	|	|	(desc = ([Ljava/lang/String;)V)
+|	|	|	|	|	|	|	(sign = null)
+|	|	|	|	|	|	|	[PROGN_
+|	|	|	|	|	|	|	|	[CLS_
+|	|	|	|	|	|	|	|	|	(type = final class)
+|	|	|	|	|	|	|	|	|	(name = Test)
+|	|	|	|	|	|	|	|	|	(parents = [ru.DmN.phtx.pls.utils.LzrMetaObject])
+|	|	|	|	|	|	|	|	|	[PROGN_B_
+|	|	|	|	|	|	|	|	|	|	[CTOR_
+|	|	|	|	|	|	|	|	|	|	|	(type = constructor)
+|	|	|	|	|	|	|	|	|	|	|	(name = <init>)
+|	|	|	|	|	|	|	|	|	|	|	(desc = ()V)
+|	|	|	|	|	|	|	|	|	|	|	(sign = null)
+|	|	|	|	|	|	|	|	|	|	|	[MCALL_
+|	|	|	|	|	|	|	|	|	|	|	|	(method = <init>()V)
+|	|	|	|	|	|	|	|	|	|	|	|	(instance:
+|	|	|	|	|	|	|	|	|	|	|	|	|	[GET_
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	(name = this)
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	(type = var)
+|	|	|	|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	|	|	|	)
+|	|	|	|	|	|	|	|	|	|	|	|	(generic = VT(void))
+|	|	|	|	|	|	|	|	|	|	|	|	(type = SUPER)
+|	|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	|	|	[PROGN_
+|	|	|	|	|	|	|	|	|	|	|	|	[PROGN_B_
+|	|	|	|	|	|	|	|	|	|	|	|	|	[PROGN_B_
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	[FLD_
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	[
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	(name = str)
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	(type = VT(java.lang.String))
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	]
+]
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	[DEFN_
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	(type = method)
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	(name = setStr)
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	(desc = (Ljava/lang/String;)V)
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	(sign = null)
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	[FSET_
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	(name = str)
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	(type = VT(java.lang.String))
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	[GET_
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	(name = this)
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	(type = var)
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	[GET_
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	(name = str)
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	(type = var)
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	[DEFN_
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	(type = method)
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	(name = getStr)
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	(desc = ()Ljava/lang/String;)
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	(sign = null)
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	[FGET_
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	(INSTANCE)
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	(name = str)
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	(type = VT(Test))
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	[FSET_
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	(name = str)
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	(type = VT(java.lang.String))
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	[GET_
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	(name = this)
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	(type = var)
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	[VALUE
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	(type = STRING)
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	(value = Hi!)
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	[DEF_
+|	|	|	|	|	|	|	|	|	(type = var)
+|	|	|	|	|	|	|	|	|	[
+|	|	|	|	|	|	|	|	|	|	(name = obj)
+|	|	|	|	|	|	|	|	|	|	(type = Test)
+|	|	|	|	|	|	|	|	|	|	[NEW_
+|	|	|	|	|	|	|	|	|	|	|	(type = VT(Test))
+|	|	|	|	|	|	|	|	|	|	|	(ctor = ()V)
+|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	[MCALL_
+|	|	|	|	|	|	|	|	|	(method = println(Ljava/lang/Object;)V)
+|	|	|	|	|	|	|	|	|	(instance:
+|	|	|	|	|	|	|	|	|	|	[VALUE
+|	|	|	|	|	|	|	|	|	|	|	(type = CLASS)
+|	|	|	|	|	|	|	|	|	|	|	(value = ru.DmN.pht.io.StdOut)
+|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	)
+|	|	|	|	|	|	|	|	|	(generic = VT(void))
+|	|	|	|	|	|	|	|	|	(type = STATIC)
+|	|	|	|	|	|	|	|	|	[MCALL_
+|	|	|	|	|	|	|	|	|	|	(method = getField(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;)
+|	|	|	|	|	|	|	|	|	|	(instance:
+|	|	|	|	|	|	|	|	|	|	|	[VALUE
+|	|	|	|	|	|	|	|	|	|	|	|	(type = CLASS)
+|	|	|	|	|	|	|	|	|	|	|	|	(value = ru.DmN.phtx.pls.utils.LzrObjectUtils)
+|	|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	|	)
+|	|	|	|	|	|	|	|	|	|	(generic = VT(java.lang.Object))
+|	|	|	|	|	|	|	|	|	|	(type = STATIC)
+|	|	|	|	|	|	|	|	|	|	[GET_
+|	|	|	|	|	|	|	|	|	|	|	(name = obj)
+|	|	|	|	|	|	|	|	|	|	|	(type = var)
+|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	|	[VALUE
+|	|	|	|	|	|	|	|	|	|	|	(type = STRING)
+|	|	|	|	|	|	|	|	|	|	|	(value = str)
+|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	]
+|	|	|	|	|	|	]
+|	|	|	|	|	]
+|	|	|	|	]
+|	|	|	)
+|	|	]
+|	)
+]

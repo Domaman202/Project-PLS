@@ -1,0 +1,43 @@
+(load-ctx
+	(use-ctx pht phtx/pls pht/jvm
+		(cls [] App [^java.lang.Object]
+			(@static
+				(defn [] main ^void [[args ^[java.lang.String]]
+					(progn
+						(cls [] Test [^ru.DmN.phtx.pls.utils.LzrMetaObject]
+							(progn-
+								(ctor []
+									(mcall
+										super
+										<init>)
+									(progn
+										(progn-
+											(progn-
+												(def-fld [
+													[str ^java.lang.String]])
+												(defn [] setStr ^void [[str ^java.lang.String]]
+													(fset
+														(get this)
+														str
+														(get str)))
+												(defn [] getStr ^java.lang.String []
+													(fget
+														(get this)
+														str))
+												(fset
+													(get this)
+													str
+													"Hi!")))))))
+						(def [
+							[^Test obj (new ^Test)]])
+						(inl-body ^void
+							(mcall
+								(fget
+									^java.lang.System
+									out)
+								println
+								(mcall
+									^ru.DmN.phtx.pls.utils.LzrObjectUtils
+									getField
+									(get obj)
+									"str")))))))))

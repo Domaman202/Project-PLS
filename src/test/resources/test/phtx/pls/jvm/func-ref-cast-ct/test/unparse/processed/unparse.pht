@@ -1,0 +1,96 @@
+(load-ctx
+	(use-ctx pht phtx/pls pht/jvm
+		(cls [] App [^java.lang.Object]
+			(@static
+				(defn [] foo ^dynamic [[getter ^java.util.function.Supplier<^java.lang.Object>]]
+					(as ^dynamic
+						(mcall
+							(get getter)
+							get)))
+				(@static
+					(defn [] main ^void [[args ^[java.lang.String]]
+						(progn
+							(cls [] Test [^ru.DmN.phtx.pls.utils.LzrMetaObject]
+								(progn-
+									(ctor []
+										(mcall
+											super
+											<init>)
+										(progn
+											(progn-
+												(progn-
+													(def-fld [
+														[str ^java.lang.String]])
+													(defn [] setStr ^void [[str ^java.lang.String]]
+														(fset
+															(get this)
+															str
+															(get str)))
+													(defn [] getStr ^java.lang.String []
+														(fget
+															(get this)
+															str))
+													(fset
+														(get this)
+														str
+														"Casted Reference!"))))))
+								(progn-
+									(defn [] getText ^dynamic []
+										(progn
+											(ret
+												(as ^dynamic
+													(mcall
+														^ru.DmN.phtx.pls.utils.LzrObjectUtils
+														getField
+														(get this)
+														"str")))))
+									(gfn [] getText ^auto []
+										(progn
+											(ret
+												(lzr-fget
+													(lzr-get-var this)
+													"str"))))))
+							(def [
+								[^Test obj (new ^Test)]])
+							(def [
+								[^java.lang.Object get (mcall
+										^ru.DmN.phtx.pls.utils.LzrObjectUtils
+										getField
+										(get obj)
+										"getText")]])
+							(inl-body ^void
+								(mcall
+									(fget
+										^java.lang.System
+										out)
+									println
+									(as ^java.lang.Object
+										(mcall
+											^App
+											foo
+											(block
+												(def [
+													[^java.lang.Object pht$tmp$37624 (get get)]])
+												(progn
+													(cls [[T ^java.lang.Object]] PhtLambda$873947384 [^java.lang.Object ^java.util.function.Supplier]
+														(def-fld [
+															[pht$tmp$37624 ^java.lang.Object]])
+														(ctor [[pht$tmp$37624 ^java.lang.Object]]
+															(mcall
+																super
+																<init>)
+															(fset
+																(get this)
+																pht$tmp$37624
+																(get pht$tmp$37624)))
+														(defn [] get ^java.lang.Object []
+															(mcall
+																^ru.DmN.phtx.pls.utils.LzrObjectUtils
+																invokeLambda
+																(get pht$tmp$37624)
+																(block
+																	(def [
+																		[^[java.lang.Object pht$tmp$29236 (new-arr ^java.lang.Object 0)]])
+																	(get pht$tmp$29236)))))
+													(new ^PhtLambda$873947384<^java.lang.Object>
+														(get pht$tmp$37624)))))))))))))))

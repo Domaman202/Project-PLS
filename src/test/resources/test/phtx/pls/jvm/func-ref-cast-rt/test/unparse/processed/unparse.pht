@@ -1,0 +1,164 @@
+(load-ctx
+	(use-ctx pht phtx/pls pht/jvm
+		(cls [] App [^java.lang.Object]
+			(@static
+				(defn [] foo ^dynamic [[getter ^java.util.function.Supplier<^java.lang.Object>]]
+					(as ^dynamic
+						(mcall
+							(get getter)
+							get)))
+				(progn-
+					(@static
+						(defn [] main ^void [[args ^[java.lang.String]]
+							(mcall
+								^ru.DmN.phtx.pls.utils.LzrRuntimeUtils
+								pushVariables)
+							(mcall
+								^ru.DmN.phtx.pls.utils.LzrRuntimeUtils
+								defSetVariable
+								"this"
+								^App)
+							(set! args
+								(get args))
+							(progn
+								(cls [] Test [^ru.DmN.phtx.pls.utils.LzrMetaObject]
+									(progn-
+										(ctor []
+											(mcall
+												^LzrRuntimeUtils
+												"pushVariables")
+											(mcall
+												^LzrRuntimeUtils
+												"defSetVariable"
+												"this"
+												this)
+											(mcall
+												super
+												<init>)
+											(progn
+												(progn-
+													(progn-
+														(def-fld [
+															[str ^java.lang.String]])
+														(defn [] setStr ^void [[str ^java.lang.String]]
+															(fset
+																(get this)
+																str
+																(get str)))
+														(defn [] getStr ^java.lang.String []
+															(fget
+																(get this)
+																str))
+														(fset
+															(get this)
+															str
+															"Casted Reference!"))))
+											(mcall
+												^LzrRuntimeUtils
+												"popVariables")))
+									(progn-
+										(defn [] getText ^dynamic []
+											(mcall
+												^ru.DmN.phtx.pls.utils.LzrRuntimeUtils
+												pushVariables)
+											(mcall
+												^ru.DmN.phtx.pls.utils.LzrRuntimeUtils
+												defSetVariable
+												"this"
+												(get this))
+											(progn
+												(ret
+													(progn
+														(def [
+															[^dynamic pht$tmp$52040 (as ^dynamic
+																	(mcall
+																		^ru.DmN.phtx.pls.utils.LzrObjectUtils
+																		getField
+																		(mcall
+																			^ru.DmN.phtx.pls.utils.LzrRuntimeUtils
+																			getVariable
+																			"this")
+																		"str"))]])
+														(mcall
+															^ru.DmN.phtx.pls.utils.LzrRuntimeUtils
+															popVariables)
+														(get pht$tmp$52040))))
+											(mcall
+												^ru.DmN.phtx.pls.utils.LzrRuntimeUtils
+												popVariables))
+										(gfn [] getText ^auto []
+											(mcall
+												^LzrRuntimeUtils
+												"pushVariables")
+											(mcall
+												^LzrRuntimeUtils
+												"defSetVariable"
+												"this"
+												this)
+											(progn
+												(ret
+													(lzr-fget
+														(lzr-get-var this)
+														"str")))
+											(mcall
+												^LzrRuntimeUtils
+												"popVariables"))))
+								(mcall
+									^ru.DmN.phtx.pls.utils.LzrRuntimeUtils
+									defSetVariable
+									"obj"
+									(new ^Test))
+								(mcall
+									^ru.DmN.phtx.pls.utils.LzrRuntimeUtils
+									defSetVariable
+									"get"
+									(mcall
+										^ru.DmN.phtx.pls.utils.LzrObjectUtils
+										getField
+										(mcall
+											^ru.DmN.phtx.pls.utils.LzrRuntimeUtils
+											getVariable
+											"obj")
+										"getText"))
+								(inl-body ^void
+									(mcall
+										(fget
+											^java.lang.System
+											out)
+										println
+										(as ^java.lang.Object
+											(mcall
+												^App
+												foo
+												(block
+													(def [
+														[^java.lang.Object pht$tmp$12753 (mcall
+																^ru.DmN.phtx.pls.utils.LzrRuntimeUtils
+																getVariable
+																"get")]])
+													(progn
+														(cls [[T ^java.lang.Object]] PhtLambda$310509615 [^java.lang.Object ^java.util.function.Supplier]
+															(def-fld [
+																[pht$tmp$12753 ^java.lang.Object]])
+															(ctor [[pht$tmp$12753 ^java.lang.Object]]
+																(mcall
+																	super
+																	<init>)
+																(fset
+																	(get this)
+																	pht$tmp$12753
+																	(get pht$tmp$12753)))
+															(defn [] get ^java.lang.Object []
+																(mcall
+																	^ru.DmN.phtx.pls.utils.LzrObjectUtils
+																	invokeLambda
+																	(get pht$tmp$12753)
+																	(block
+																		(def [
+																			[^[java.lang.Object pht$tmp$4365 (new-arr ^java.lang.Object 0)]])
+																		(get pht$tmp$4365)))))
+														(new ^PhtLambda$310509615<^java.lang.Object>
+															(get pht$tmp$12753)))))))))
+							(mcall
+								^ru.DmN.phtx.pls.utils.LzrRuntimeUtils
+								popVariables))))))))

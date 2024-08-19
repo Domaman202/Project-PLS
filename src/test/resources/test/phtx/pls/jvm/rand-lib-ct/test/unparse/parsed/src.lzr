@@ -1,0 +1,2 @@
+using "lzr.utils.random"
+println(random(1, 100))

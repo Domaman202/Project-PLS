@@ -1,0 +1,1 @@
+(@lzr-entry (app-fn (inc-lzr-rt "src.lzr")))

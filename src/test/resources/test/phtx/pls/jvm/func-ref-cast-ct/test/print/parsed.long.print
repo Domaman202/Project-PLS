@@ -1,0 +1,47 @@
+[LOAD_CTX
+|	[USE_CTX
+|	|	(modules = pht phtx/pls pht/jvm)
+|	|	[APP
+|	|	|	[DEFN
+|	|	|	|	[GET_OR_NAME
+|	|	|	|	|	(type = NO-STATIC)
+|	|	|	|	|	(text = foo)
+|	|	|	|	]
+|	|	|	|	[VALUE
+|	|	|	|	|	(type = CLASS)
+|	|	|	|	|	(value = dynamic)
+|	|	|	|	]
+|	|	|	|	[VALN
+|	|	|	|	|	[VALN
+|	|	|	|	|	|	[GET_OR_NAME
+|	|	|	|	|	|	|	(type = NO-STATIC)
+|	|	|	|	|	|	|	(text = getter)
+|	|	|	|	|	|	]
+|	|	|	|	|	|	[VALUE
+|	|	|	|	|	|	|	(type = CLASS)
+|	|	|	|	|	|	|	(value = java.util.function.Supplier)
+|	|	|	|	|	|	]
+|	|	|	|	|	]
+|	|	|	|	]
+|	|	|	|	[MCALL
+|	|	|	|	|	[GET_OR_NAME
+|	|	|	|	|	|	(type = NO-STATIC)
+|	|	|	|	|	|	(text = getter)
+|	|	|	|	|	]
+|	|	|	|	|	[VALUE
+|	|	|	|	|	|	(type = NAMING)
+|	|	|	|	|	|	(value = get)
+|	|	|	|	|	]
+|	|	|	|	]
+|	|	|	]
+|	|	|	[APP_FN
+|	|	|	|	[INC_LZR
+|	|	|	|	|	[VALUE
+|	|	|	|	|	|	(type = STRING)
+|	|	|	|	|	|	(value = src.lzr)
+|	|	|	|	|	]
+|	|	|	|	]
+|	|	|	]
+|	|	]
+|	]
+]

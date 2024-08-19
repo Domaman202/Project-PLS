@@ -1,0 +1,13 @@
+[LOAD_CTX
+|	[USE_CTX
+|	|	(modules = pht phtx/pls pht/jvm)
+|	|	[APP_FN
+|	|	|	[INC_LZR
+|	|	|	|	[VALUE
+|	|	|	|	|	(type = STRING)
+|	|	|	|	|	(value = src.lzr)
+|	|	|	|	]
+|	|	|	]
+|	|	]
+|	]
+]

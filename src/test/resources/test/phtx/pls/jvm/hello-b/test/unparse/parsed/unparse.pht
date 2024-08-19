@@ -1,0 +1,9 @@
+(load-ctx
+	(use-ctx pht phtx/pls pht/jvm
+		(app
+			(app-fn
+				(mcall
+					.
+					main))
+			(inc-lzr
+				"src.lzr"))))

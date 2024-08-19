@@ -1,0 +1,10 @@
+(load-ctx
+	(use-ctx pht phtx/pls pht/jvm
+		(progn
+			(inc-lzr
+				"src.lzr")
+			(app-fn
+				(mcall
+					(new
+						^Test)
+					main)))))

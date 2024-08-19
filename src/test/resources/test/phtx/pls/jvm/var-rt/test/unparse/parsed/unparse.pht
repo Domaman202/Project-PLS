@@ -1,0 +1,6 @@
+(load-ctx
+	(use-ctx pht phtx/pls pht/jvm
+		(@lzr-entry
+			(app-fn
+				(inc-lzr-rt
+					"src.lzr")))))

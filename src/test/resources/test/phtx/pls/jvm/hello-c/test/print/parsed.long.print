@@ -1,0 +1,27 @@
+[LOAD_CTX
+|	[USE_CTX
+|	|	(modules = pht phtx/pls pht/jvm)
+|	|	[PROGN
+|	|	|	[INC_LZR
+|	|	|	|	[VALUE
+|	|	|	|	|	(type = STRING)
+|	|	|	|	|	(value = src.lzr)
+|	|	|	|	]
+|	|	|	]
+|	|	|	[APP_FN
+|	|	|	|	[MCALL
+|	|	|	|	|	[NEW
+|	|	|	|	|	|	[VALUE
+|	|	|	|	|	|	|	(type = CLASS)
+|	|	|	|	|	|	|	(value = Test)
+|	|	|	|	|	|	]
+|	|	|	|	|	]
+|	|	|	|	|	[VALUE
+|	|	|	|	|	|	(type = NAMING)
+|	|	|	|	|	|	(value = main)
+|	|	|	|	|	]
+|	|	|	|	]
+|	|	|	]
+|	|	]
+|	]
+]

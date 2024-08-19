@@ -1,0 +1,7 @@
+(module
+    (name "test/phtx/pls/jvm/empty-ctor")
+    (version "1.0.0")
+    (author "DomamaN202")
+    (deps ["pht" "phtx/pls"])
+    (uses ["pht" "phtx/pls"])
+    (src ["src.pht"]))

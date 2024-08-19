@@ -1,0 +1,5 @@
+class Test {
+    func empty() { }
+}
+
+println(new Test())

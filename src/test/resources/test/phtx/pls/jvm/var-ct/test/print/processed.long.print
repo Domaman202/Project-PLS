@@ -1,0 +1,73 @@
+[LOAD_CTX_
+|	(modules =)
+|	(NODES:
+|	|	[USE_CTX_
+|	|	|	(modules = pht phtx/pls pht/jvm)
+|	|	|	(NODES:
+|	|	|	|	[CLS_
+|	|	|	|	|	(type = final class)
+|	|	|	|	|	(name = App)
+|	|	|	|	|	(parents = [java.lang.Object])
+|	|	|	|	|	[ANN_STATIC_
+|	|	|	|	|	|	[DEFN_
+|	|	|	|	|	|	|	(type = method)
+|	|	|	|	|	|	|	(name = main)
+|	|	|	|	|	|	|	(desc = ([Ljava/lang/String;)V)
+|	|	|	|	|	|	|	(sign = null)
+|	|	|	|	|	|	|	[PROGN_
+|	|	|	|	|	|	|	|	[DEF_
+|	|	|	|	|	|	|	|	|	(type = var)
+|	|	|	|	|	|	|	|	|	[
+|	|	|	|	|	|	|	|	|	|	(name = i)
+|	|	|	|	|	|	|	|	|	|	(type = double)
+|	|	|	|	|	|	|	|	|	|	[VALUE
+|	|	|	|	|	|	|	|	|	|	|	(type = DOUBLE)
+|	|	|	|	|	|	|	|	|	|	|	(value = 12.0)
+|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	[MCALL_
+|	|	|	|	|	|	|	|	|	(method = println(D)V)
+|	|	|	|	|	|	|	|	|	(instance:
+|	|	|	|	|	|	|	|	|	|	[VALUE
+|	|	|	|	|	|	|	|	|	|	|	(type = CLASS)
+|	|	|	|	|	|	|	|	|	|	|	(value = ru.DmN.pht.io.StdOut)
+|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	)
+|	|	|	|	|	|	|	|	|	(generic = VT(void))
+|	|	|	|	|	|	|	|	|	(type = STATIC)
+|	|	|	|	|	|	|	|	|	[GET_
+|	|	|	|	|	|	|	|	|	|	(name = i)
+|	|	|	|	|	|	|	|	|	|	(type = var)
+|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	[SET_
+|	|	|	|	|	|	|	|	|	(name = i)
+|	|	|	|	|	|	|	|	|	[VALUE
+|	|	|	|	|	|	|	|	|	|	(type = DOUBLE)
+|	|	|	|	|	|	|	|	|	|	(value = 21.33)
+|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	[MCALL_
+|	|	|	|	|	|	|	|	|	(method = println(D)V)
+|	|	|	|	|	|	|	|	|	(instance:
+|	|	|	|	|	|	|	|	|	|	[VALUE
+|	|	|	|	|	|	|	|	|	|	|	(type = CLASS)
+|	|	|	|	|	|	|	|	|	|	|	(value = ru.DmN.pht.io.StdOut)
+|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	)
+|	|	|	|	|	|	|	|	|	(generic = VT(void))
+|	|	|	|	|	|	|	|	|	(type = STATIC)
+|	|	|	|	|	|	|	|	|	[GET_
+|	|	|	|	|	|	|	|	|	|	(name = i)
+|	|	|	|	|	|	|	|	|	|	(type = var)
+|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	]
+|	|	|	|	|	|	]
+|	|	|	|	|	]
+|	|	|	|	]
+|	|	|	)
+|	|	]
+|	)
+]

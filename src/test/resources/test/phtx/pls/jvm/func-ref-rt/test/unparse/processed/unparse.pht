@@ -1,0 +1,124 @@
+(load-ctx
+	(use-ctx pht phtx/pls pht/jvm
+		(progn-
+			(cls [] App [^java.lang.Object]
+				(@static
+					(defn [] main ^void [[args ^[java.lang.String]]
+						(progn
+							(cls [] Test [^ru.DmN.phtx.pls.utils.LzrMetaObject]
+								(progn-
+									(ctor []
+										(mcall
+											^LzrRuntimeUtils
+											"pushVariables")
+										(mcall
+											^LzrRuntimeUtils
+											"defSetVariable"
+											"this"
+											this)
+										(mcall
+											super
+											<init>)
+										(progn
+											(progn-
+												(progn-
+													(def-fld [
+														[str ^java.lang.String]])
+													(defn [] setStr ^void [[str ^java.lang.String]]
+														(fset
+															(get this)
+															str
+															(get str)))
+													(defn [] getStr ^java.lang.String []
+														(fget
+															(get this)
+															str))
+													(fset
+														(get this)
+														str
+														"Simple Reference!"))))
+										(mcall
+											^LzrRuntimeUtils
+											"popVariables")))
+								(progn-
+									(defn [] getText ^dynamic []
+										(mcall
+											^ru.DmN.phtx.pls.utils.LzrRuntimeUtils
+											pushVariables)
+										(mcall
+											^ru.DmN.phtx.pls.utils.LzrRuntimeUtils
+											defSetVariable
+											"this"
+											(get this))
+										(progn
+											(ret
+												(progn
+													(def [
+														[^dynamic pht$tmp$28125 (as ^dynamic
+																(mcall
+																	^ru.DmN.phtx.pls.utils.LzrObjectUtils
+																	getField
+																	(mcall
+																		^ru.DmN.phtx.pls.utils.LzrRuntimeUtils
+																		getVariable
+																		"this")
+																	"str"))]])
+													(mcall
+														^ru.DmN.phtx.pls.utils.LzrRuntimeUtils
+														popVariables)
+													(get pht$tmp$28125))))
+										(mcall
+											^ru.DmN.phtx.pls.utils.LzrRuntimeUtils
+											popVariables))
+									(gfn [] getText ^auto []
+										(mcall
+											^LzrRuntimeUtils
+											"pushVariables")
+										(mcall
+											^LzrRuntimeUtils
+											"defSetVariable"
+											"this"
+											this)
+										(progn
+											(ret
+												(lzr-fget
+													(lzr-get-var this)
+													"str")))
+										(mcall
+											^LzrRuntimeUtils
+											"popVariables"))))
+							(mcall
+								^ru.DmN.phtx.pls.utils.LzrRuntimeUtils
+								defSetVariable
+								"obj"
+								(new ^Test))
+							(mcall
+								^ru.DmN.phtx.pls.utils.LzrRuntimeUtils
+								defSetVariable
+								"get"
+								(mcall
+									^ru.DmN.phtx.pls.utils.LzrObjectUtils
+									getField
+									(mcall
+										^ru.DmN.phtx.pls.utils.LzrRuntimeUtils
+										getVariable
+										"obj")
+									"getText"))
+							(inl-body ^void
+								(mcall
+									(fget
+										^java.lang.System
+										out)
+									println
+									(mcall
+										^ru.DmN.phtx.pls.utils.LzrObjectUtils
+										invokeLambdaRt
+										(mcall
+											^ru.DmN.phtx.pls.utils.LzrRuntimeUtils
+											getVariable
+											"get")
+										"get"
+										(block
+											(def [
+												[^[java.lang.Object pht$tmp$9280 (new-arr ^java.lang.Object 0)]])
+											(get pht$tmp$9280))))))))))))

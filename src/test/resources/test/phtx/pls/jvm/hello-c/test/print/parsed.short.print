@@ -1,0 +1,17 @@
+[LOAD_CTX
+|	[USE_CTX
+|	|	[PROGN
+|	|	|	[INC_LZR
+|	|	|	|	[VALUE]
+|	|	|	]
+|	|	|	[APP_FN
+|	|	|	|	[MCALL
+|	|	|	|	|	[NEW
+|	|	|	|	|	|	[VALUE]
+|	|	|	|	|	]
+|	|	|	|	|	[VALUE]
+|	|	|	|	]
+|	|	|	]
+|	|	]
+|	]
+]

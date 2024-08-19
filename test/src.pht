@@ -1,0 +1,6 @@
+(app
+    (defn contentToString ^dynamic [[array ^dynamic]]
+        (#contentToString (as ^[Any array)))
+    (@lzr-entry
+    (app-fn
+        (inc-lzr-rt "src.lzr"))))

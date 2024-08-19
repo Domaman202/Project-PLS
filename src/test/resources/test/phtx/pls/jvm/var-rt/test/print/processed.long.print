@@ -1,0 +1,123 @@
+[LOAD_CTX_
+|	(modules =)
+|	(NODES:
+|	|	[USE_CTX_
+|	|	|	(modules = pht phtx/pls pht/jvm)
+|	|	|	(NODES:
+|	|	|	|	[PROGN_B_
+|	|	|	|	|	[CLS_
+|	|	|	|	|	|	(type = final class)
+|	|	|	|	|	|	(name = App)
+|	|	|	|	|	|	(parents = [java.lang.Object])
+|	|	|	|	|	|	[ANN_STATIC_
+|	|	|	|	|	|	|	[DEFN_
+|	|	|	|	|	|	|	|	(type = method)
+|	|	|	|	|	|	|	|	(name = main)
+|	|	|	|	|	|	|	|	(desc = ([Ljava/lang/String;)V)
+|	|	|	|	|	|	|	|	(sign = null)
+|	|	|	|	|	|	|	|	[PROGN_
+|	|	|	|	|	|	|	|	|	[MCALL_
+|	|	|	|	|	|	|	|	|	|	(method = defSetVariable(Ljava/lang/String;Ljava/lang/Object;)V)
+|	|	|	|	|	|	|	|	|	|	(instance:
+|	|	|	|	|	|	|	|	|	|	|	[VALUE
+|	|	|	|	|	|	|	|	|	|	|	|	(type = CLASS)
+|	|	|	|	|	|	|	|	|	|	|	|	(value = ru.DmN.phtx.pls.utils.LzrRuntimeUtils)
+|	|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	|	)
+|	|	|	|	|	|	|	|	|	|	(generic = VT(void))
+|	|	|	|	|	|	|	|	|	|	(type = STATIC)
+|	|	|	|	|	|	|	|	|	|	[VALUE
+|	|	|	|	|	|	|	|	|	|	|	(type = STRING)
+|	|	|	|	|	|	|	|	|	|	|	(value = i)
+|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	|	[AS_
+|	|	|	|	|	|	|	|	|	|	|	(type = VT(java.lang.Object))
+|	|	|	|	|	|	|	|	|	|	|	[VALUE
+|	|	|	|	|	|	|	|	|	|	|	|	(type = DOUBLE)
+|	|	|	|	|	|	|	|	|	|	|	|	(value = 12.0)
+|	|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	[MCALL_
+|	|	|	|	|	|	|	|	|	|	(method = println(Ljava/lang/Object;)V)
+|	|	|	|	|	|	|	|	|	|	(instance:
+|	|	|	|	|	|	|	|	|	|	|	[VALUE
+|	|	|	|	|	|	|	|	|	|	|	|	(type = CLASS)
+|	|	|	|	|	|	|	|	|	|	|	|	(value = ru.DmN.pht.io.StdOut)
+|	|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	|	)
+|	|	|	|	|	|	|	|	|	|	(generic = VT(void))
+|	|	|	|	|	|	|	|	|	|	(type = STATIC)
+|	|	|	|	|	|	|	|	|	|	[MCALL_
+|	|	|	|	|	|	|	|	|	|	|	(method = getVariable(Ljava/lang/String;)Ljava/lang/Object;)
+|	|	|	|	|	|	|	|	|	|	|	(instance:
+|	|	|	|	|	|	|	|	|	|	|	|	[VALUE
+|	|	|	|	|	|	|	|	|	|	|	|	|	(type = CLASS)
+|	|	|	|	|	|	|	|	|	|	|	|	|	(value = ru.DmN.phtx.pls.utils.LzrRuntimeUtils)
+|	|	|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	|	|	)
+|	|	|	|	|	|	|	|	|	|	|	(generic = VT(java.lang.Object))
+|	|	|	|	|	|	|	|	|	|	|	(type = STATIC)
+|	|	|	|	|	|	|	|	|	|	|	[VALUE
+|	|	|	|	|	|	|	|	|	|	|	|	(type = STRING)
+|	|	|	|	|	|	|	|	|	|	|	|	(value = i)
+|	|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	[MCALL_
+|	|	|	|	|	|	|	|	|	|	(method = defSetVariable(Ljava/lang/String;Ljava/lang/Object;)V)
+|	|	|	|	|	|	|	|	|	|	(instance:
+|	|	|	|	|	|	|	|	|	|	|	[VALUE
+|	|	|	|	|	|	|	|	|	|	|	|	(type = CLASS)
+|	|	|	|	|	|	|	|	|	|	|	|	(value = ru.DmN.phtx.pls.utils.LzrRuntimeUtils)
+|	|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	|	)
+|	|	|	|	|	|	|	|	|	|	(generic = VT(void))
+|	|	|	|	|	|	|	|	|	|	(type = STATIC)
+|	|	|	|	|	|	|	|	|	|	[VALUE
+|	|	|	|	|	|	|	|	|	|	|	(type = STRING)
+|	|	|	|	|	|	|	|	|	|	|	(value = i)
+|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	|	[AS_
+|	|	|	|	|	|	|	|	|	|	|	(type = VT(java.lang.Object))
+|	|	|	|	|	|	|	|	|	|	|	[VALUE
+|	|	|	|	|	|	|	|	|	|	|	|	(type = DOUBLE)
+|	|	|	|	|	|	|	|	|	|	|	|	(value = 21.33)
+|	|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	[MCALL_
+|	|	|	|	|	|	|	|	|	|	(method = println(Ljava/lang/Object;)V)
+|	|	|	|	|	|	|	|	|	|	(instance:
+|	|	|	|	|	|	|	|	|	|	|	[VALUE
+|	|	|	|	|	|	|	|	|	|	|	|	(type = CLASS)
+|	|	|	|	|	|	|	|	|	|	|	|	(value = ru.DmN.pht.io.StdOut)
+|	|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	|	)
+|	|	|	|	|	|	|	|	|	|	(generic = VT(void))
+|	|	|	|	|	|	|	|	|	|	(type = STATIC)
+|	|	|	|	|	|	|	|	|	|	[MCALL_
+|	|	|	|	|	|	|	|	|	|	|	(method = getVariable(Ljava/lang/String;)Ljava/lang/Object;)
+|	|	|	|	|	|	|	|	|	|	|	(instance:
+|	|	|	|	|	|	|	|	|	|	|	|	[VALUE
+|	|	|	|	|	|	|	|	|	|	|	|	|	(type = CLASS)
+|	|	|	|	|	|	|	|	|	|	|	|	|	(value = ru.DmN.phtx.pls.utils.LzrRuntimeUtils)
+|	|	|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	|	|	)
+|	|	|	|	|	|	|	|	|	|	|	(generic = VT(java.lang.Object))
+|	|	|	|	|	|	|	|	|	|	|	(type = STATIC)
+|	|	|	|	|	|	|	|	|	|	|	[VALUE
+|	|	|	|	|	|	|	|	|	|	|	|	(type = STRING)
+|	|	|	|	|	|	|	|	|	|	|	|	(value = i)
+|	|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	]
+|	|	|	|	|	|	]
+|	|	|	|	|	]
+|	|	|	|	]
+|	|	|	)
+|	|	]
+|	)
+]

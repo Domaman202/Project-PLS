@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "ru.DmN.phtx"
-version = "1.1.0"
+version = "1.2.0"
 
 repositories {
     mavenCentral()
@@ -12,9 +12,9 @@ repositories {
 }
 
 dependencies {
-    implementation("ru.DmN.siberia:Project-Siberia:1.8.11")
-    implementation("ru.DmN.pht:Project-Pihta:1.7.2")
-    implementation(files("Lazurite-2.7.0.jar"))
+    api("ru.DmN.siberia:Project-Siberia:1.25.1")
+    api("ru.DmN.pht:Project-Pihta:1.29.3")
+    api(files("Lazurite-2.7.5.jar"))
     testImplementation("org.jetbrains.kotlin:kotlin-test")
 }
 

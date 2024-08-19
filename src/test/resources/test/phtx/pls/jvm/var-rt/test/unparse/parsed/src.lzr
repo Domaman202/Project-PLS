@@ -1,0 +1,4 @@
+i = 12
+println(i)
+i = 21.33
+println(i)

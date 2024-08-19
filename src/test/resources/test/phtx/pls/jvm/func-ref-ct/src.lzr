@@ -1,0 +1,13 @@
+class Test {
+    func Test() {
+        this.str = "Simple Reference!"
+    }
+
+    func getText() {
+        return this.str
+    }
+}
+
+obj = new Test()
+get = obj.getText
+println(get())

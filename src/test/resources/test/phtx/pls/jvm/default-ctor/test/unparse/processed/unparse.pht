@@ -1,0 +1,25 @@
+(load-ctx
+	(use-ctx pht phtx/pls pht/jvm
+		(cls [] App [^java.lang.Object]
+			(@static
+				(defn [] main ^void [[args ^[java.lang.String]]
+					(progn
+						(cls [] Test [^ru.DmN.phtx.pls.utils.LzrMetaObject]
+							(progn-
+								(defn [] empty ^dynamic []
+									(as ^dynamic
+										(as ^dynamic
+											nil)))
+								(gfn [] empty ^auto []
+									(progn)))
+							(ctor []
+								(mcall
+									super
+									<init>)))
+						(inl-body ^void
+							(mcall
+								(fget
+									^java.lang.System
+									out)
+								println
+								(new ^Test)))))))))

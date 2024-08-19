@@ -1,0 +1,127 @@
+[LOAD_CTX_
+|	(modules =)
+|	(NODES:
+|	|	[USE_CTX_
+|	|	|	(modules = pht phtx/pls pht/jvm)
+|	|	|	(NODES:
+|	|	|	|	[PROGN_B_
+|	|	|	|	|	[CLS_
+|	|	|	|	|	|	(type = final class)
+|	|	|	|	|	|	(name = App)
+|	|	|	|	|	|	(parents = [java.lang.Object])
+|	|	|	|	|	|	[ANN_STATIC_
+|	|	|	|	|	|	|	[DEFN_
+|	|	|	|	|	|	|	|	(type = method)
+|	|	|	|	|	|	|	|	(name = main)
+|	|	|	|	|	|	|	|	(desc = ([Ljava/lang/String;)V)
+|	|	|	|	|	|	|	|	(sign = null)
+|	|	|	|	|	|	|	|	[PROGN_
+|	|	|	|	|	|	|	|	|	[MCALL_
+|	|	|	|	|	|	|	|	|	|	(method = loadLibrary(Ljava/lang/String;)V)
+|	|	|	|	|	|	|	|	|	|	(instance:
+|	|	|	|	|	|	|	|	|	|	|	[VALUE
+|	|	|	|	|	|	|	|	|	|	|	|	(type = CLASS)
+|	|	|	|	|	|	|	|	|	|	|	|	(value = ru.DmN.phtx.pls.utils.LzrRuntimeUtils)
+|	|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	|	)
+|	|	|	|	|	|	|	|	|	|	(generic = VT(void))
+|	|	|	|	|	|	|	|	|	|	(type = STATIC)
+|	|	|	|	|	|	|	|	|	|	[VALUE
+|	|	|	|	|	|	|	|	|	|	|	(type = STRING)
+|	|	|	|	|	|	|	|	|	|	|	(value = lzr.utils.random)
+|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	[MCALL_
+|	|	|	|	|	|	|	|	|	|	(method = println(Ljava/lang/Object;)V)
+|	|	|	|	|	|	|	|	|	|	(instance:
+|	|	|	|	|	|	|	|	|	|	|	[VALUE
+|	|	|	|	|	|	|	|	|	|	|	|	(type = CLASS)
+|	|	|	|	|	|	|	|	|	|	|	|	(value = ru.DmN.pht.io.StdOut)
+|	|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	|	)
+|	|	|	|	|	|	|	|	|	|	(generic = VT(void))
+|	|	|	|	|	|	|	|	|	|	(type = STATIC)
+|	|	|	|	|	|	|	|	|	|	[MCALL_
+|	|	|	|	|	|	|	|	|	|	|	(method = invokeLambdaRt(Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;)
+|	|	|	|	|	|	|	|	|	|	|	(instance:
+|	|	|	|	|	|	|	|	|	|	|	|	[VALUE
+|	|	|	|	|	|	|	|	|	|	|	|	|	(type = CLASS)
+|	|	|	|	|	|	|	|	|	|	|	|	|	(value = ru.DmN.phtx.pls.utils.LzrObjectUtils)
+|	|	|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	|	|	)
+|	|	|	|	|	|	|	|	|	|	|	(generic = VT(java.lang.Object))
+|	|	|	|	|	|	|	|	|	|	|	(type = STATIC)
+|	|	|	|	|	|	|	|	|	|	|	[MCALL_
+|	|	|	|	|	|	|	|	|	|	|	|	(method = getVariable(Ljava/lang/String;)Ljava/lang/Object;)
+|	|	|	|	|	|	|	|	|	|	|	|	(instance:
+|	|	|	|	|	|	|	|	|	|	|	|	|	[VALUE
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	(type = CLASS)
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	(value = ru.DmN.phtx.pls.utils.LzrRuntimeUtils)
+|	|	|	|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	|	|	|	)
+|	|	|	|	|	|	|	|	|	|	|	|	(generic = VT(java.lang.Object))
+|	|	|	|	|	|	|	|	|	|	|	|	(type = STATIC)
+|	|	|	|	|	|	|	|	|	|	|	|	[VALUE
+|	|	|	|	|	|	|	|	|	|	|	|	|	(type = STRING)
+|	|	|	|	|	|	|	|	|	|	|	|	|	(value = random)
+|	|	|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	|	|	[VALUE
+|	|	|	|	|	|	|	|	|	|	|	|	(type = STRING)
+|	|	|	|	|	|	|	|	|	|	|	|	(value = random)
+|	|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	|	|	[BLOCK_
+|	|	|	|	|	|	|	|	|	|	|	|	[DEF_
+|	|	|	|	|	|	|	|	|	|	|	|	|	(type = var)
+|	|	|	|	|	|	|	|	|	|	|	|	|	[
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	(name = pht$tmp$64147)
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	(type = [java.lang.Object)
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	[NEW_ARR_
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	(type = java.lang.Object)
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	(size:
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	[VALUE
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	(type = INT)
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	(value = 2)
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	)
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	|	|	|	[ASET_
+|	|	|	|	|	|	|	|	|	|	|	|	|	[GET_
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	(name = pht$tmp$64147)
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	(type = var)
+|	|	|	|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	|	|	|	|	[VALUE
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	(type = INT)
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	(value = 0)
+|	|	|	|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	|	|	|	|	[LZR_CAST_]
+|	|	|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	|	|	|	[ASET_
+|	|	|	|	|	|	|	|	|	|	|	|	|	[GET_
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	(name = pht$tmp$64147)
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	(type = var)
+|	|	|	|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	|	|	|	|	[VALUE
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	(type = INT)
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	(value = 1)
+|	|	|	|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	|	|	|	|	[LZR_CAST_]
+|	|	|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	|	|	|	[GET_
+|	|	|	|	|	|	|	|	|	|	|	|	|	(name = pht$tmp$64147)
+|	|	|	|	|	|	|	|	|	|	|	|	|	(type = var)
+|	|	|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	]
+|	|	|	|	|	|	]
+|	|	|	|	|	]
+|	|	|	|	]
+|	|	|	)
+|	|	]
+|	)
+]

@@ -1,0 +1,6 @@
+(app
+    (defn foo ^dynamic [[getter ^java.util.function.Supplier]]
+        (#get getter))
+    (@lzr-entry
+    (app-fn
+        (inc-lzr-rt "src.lzr"))))

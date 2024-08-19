@@ -1,0 +1,27 @@
+[LOAD_CTX
+|	[USE_CTX
+|	|	[APP
+|	|	|	[DEFN
+|	|	|	|	[GET_OR_NAME]
+|	|	|	|	[VALUE]
+|	|	|	|	[VALN
+|	|	|	|	|	[VALN
+|	|	|	|	|	|	[GET_OR_NAME]
+|	|	|	|	|	|	[VALUE]
+|	|	|	|	|	]
+|	|	|	|	]
+|	|	|	|	[MCALL
+|	|	|	|	|	[GET_OR_NAME]
+|	|	|	|	|	[VALUE]
+|	|	|	|	]
+|	|	|	]
+|	|	|	[ANN_LZR_ENTRY
+|	|	|	|	[APP_FN
+|	|	|	|	|	[INC_LZR_RT
+|	|	|	|	|	|	[VALUE]
+|	|	|	|	|	]
+|	|	|	|	]
+|	|	|	]
+|	|	]
+|	]
+]

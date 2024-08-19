@@ -1,0 +1,18 @@
+(load-ctx
+	(use-ctx pht phtx/pls pht/jvm
+		(app
+			(defn
+				foo
+				^dynamic
+				[
+					[
+						getter
+						^java.util.function.Supplier
+					]
+				]
+				(mcall
+					getter
+					get))
+			(app-fn
+				(inc-lzr
+					"src.lzr")))))

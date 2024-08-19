@@ -1,0 +1,24 @@
+(load-ctx
+	(use-ctx pht phtx/pls pht/jvm
+		(cls [] App [^java.lang.Object]
+			(@static
+				(defn [] main ^void [[args ^[java.lang.String]]
+					(progn
+						(def [
+							[^double i 12.0]])
+						(inl-body ^void
+							(mcall
+								(fget
+									^java.lang.System
+									out)
+								println
+								(get i)))
+						(set! i
+							21.33)
+						(inl-body ^void
+							(mcall
+								(fget
+									^java.lang.System
+									out)
+								println
+								(get i)))))))))

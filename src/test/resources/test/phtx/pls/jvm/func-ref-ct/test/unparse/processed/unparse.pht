@@ -1,0 +1,68 @@
+(load-ctx
+	(use-ctx pht phtx/pls pht/jvm
+		(cls [] App [^java.lang.Object]
+			(@static
+				(defn [] main ^void [[args ^[java.lang.String]]
+					(progn
+						(cls [] Test [^ru.DmN.phtx.pls.utils.LzrMetaObject]
+							(progn-
+								(ctor []
+									(mcall
+										super
+										<init>)
+									(progn
+										(progn-
+											(progn-
+												(def-fld [
+													[str ^java.lang.String]])
+												(defn [] setStr ^void [[str ^java.lang.String]]
+													(fset
+														(get this)
+														str
+														(get str)))
+												(defn [] getStr ^java.lang.String []
+													(fget
+														(get this)
+														str))
+												(fset
+													(get this)
+													str
+													"Simple Reference!"))))))
+							(progn-
+								(defn [] getText ^dynamic []
+									(progn
+										(ret
+											(as ^dynamic
+												(mcall
+													^ru.DmN.phtx.pls.utils.LzrObjectUtils
+													getField
+													(get this)
+													"str")))))
+								(gfn [] getText ^auto []
+									(progn
+										(ret
+											(lzr-fget
+												(lzr-get-var this)
+												"str"))))))
+						(def [
+							[^Test obj (new ^Test)]])
+						(def [
+							[^java.lang.Object get (mcall
+									^ru.DmN.phtx.pls.utils.LzrObjectUtils
+									getField
+									(get obj)
+									"getText")]])
+						(inl-body ^void
+							(mcall
+								(fget
+									^java.lang.System
+									out)
+								println
+								(mcall
+									^ru.DmN.phtx.pls.utils.LzrObjectUtils
+									invokeLambda
+									(get get)
+									(block
+										(def [
+											[^[java.lang.Object pht$tmp$12048 (new-arr ^java.lang.Object 0)]])
+										(get pht$tmp$12048)))))))))))

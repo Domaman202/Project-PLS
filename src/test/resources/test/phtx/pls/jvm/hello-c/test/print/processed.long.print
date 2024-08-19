@@ -1,0 +1,99 @@
+[LOAD_CTX_
+|	(modules =)
+|	(NODES:
+|	|	[USE_CTX_
+|	|	|	(modules = pht phtx/pls pht/jvm)
+|	|	|	(NODES:
+|	|	|	|	[PROGN_
+|	|	|	|	|	[PROGN_B_
+|	|	|	|	|	|	[CLS_
+|	|	|	|	|	|	|	(type = final class)
+|	|	|	|	|	|	|	(name = Test)
+|	|	|	|	|	|	|	(parents = [ru.DmN.phtx.pls.utils.LzrMetaObject])
+|	|	|	|	|	|	|	[PROGN_B_
+|	|	|	|	|	|	|	|	[DEFN_
+|	|	|	|	|	|	|	|	|	(type = method)
+|	|	|	|	|	|	|	|	|	(name = main)
+|	|	|	|	|	|	|	|	|	(desc = ()Ljava/lang/Object;)
+|	|	|	|	|	|	|	|	|	(sign = null)
+|	|	|	|	|	|	|	|	|	[PROGN_
+|	|	|	|	|	|	|	|	|	|	[MCALL_
+|	|	|	|	|	|	|	|	|	|	|	(method = println(Ljava/lang/Object;)V)
+|	|	|	|	|	|	|	|	|	|	|	(instance:
+|	|	|	|	|	|	|	|	|	|	|	|	[VALUE
+|	|	|	|	|	|	|	|	|	|	|	|	|	(type = CLASS)
+|	|	|	|	|	|	|	|	|	|	|	|	|	(value = ru.DmN.pht.io.StdOut)
+|	|	|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	|	|	)
+|	|	|	|	|	|	|	|	|	|	|	(generic = VT(void))
+|	|	|	|	|	|	|	|	|	|	|	(type = STATIC)
+|	|	|	|	|	|	|	|	|	|	|	[VALUE
+|	|	|	|	|	|	|	|	|	|	|	|	(type = STRING)
+|	|	|	|	|	|	|	|	|	|	|	|	(value = Hello, Pihta!)
+|	|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	[GFN_
+|	|	|	|	|	|	|	|	|	(type = method)
+|	|	|	|	|	|	|	|	|	(name = main)
+|	|	|	|	|	|	|	|	|	(desc = ()Ljava/lang/Object;)
+|	|	|	|	|	|	|	|	|	(sign = null)
+|	|	|	|	|	|	|	|	|	[PROGN
+|	|	|	|	|	|	|	|	|	|	[PRINTLN
+|	|	|	|	|	|	|	|	|	|	|	[VALUE
+|	|	|	|	|	|	|	|	|	|	|	|	(type = STRING)
+|	|	|	|	|	|	|	|	|	|	|	|	(value = Hello, Pihta!)
+|	|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	[CTOR_
+|	|	|	|	|	|	|	|	(type = constructor)
+|	|	|	|	|	|	|	|	(name = <init>)
+|	|	|	|	|	|	|	|	(desc = ()V)
+|	|	|	|	|	|	|	|	(sign = null)
+|	|	|	|	|	|	|	|	[MCALL_
+|	|	|	|	|	|	|	|	|	(method = <init>()V)
+|	|	|	|	|	|	|	|	|	(instance:
+|	|	|	|	|	|	|	|	|	|	[GET_
+|	|	|	|	|	|	|	|	|	|	|	(name = this)
+|	|	|	|	|	|	|	|	|	|	|	(type = var)
+|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	)
+|	|	|	|	|	|	|	|	|	(generic = VT(void))
+|	|	|	|	|	|	|	|	|	(type = SUPER)
+|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	]
+|	|	|	|	|	|	]
+|	|	|	|	|	]
+|	|	|	|	|	[CLS_
+|	|	|	|	|	|	(type = final class)
+|	|	|	|	|	|	(name = App)
+|	|	|	|	|	|	(parents = [java.lang.Object])
+|	|	|	|	|	|	[ANN_STATIC_
+|	|	|	|	|	|	|	[DEFN_
+|	|	|	|	|	|	|	|	(type = method)
+|	|	|	|	|	|	|	|	(name = main)
+|	|	|	|	|	|	|	|	(desc = ([Ljava/lang/String;)V)
+|	|	|	|	|	|	|	|	(sign = null)
+|	|	|	|	|	|	|	|	[MCALL_
+|	|	|	|	|	|	|	|	|	(method = main()Ljava/lang/Object;)
+|	|	|	|	|	|	|	|	|	(instance:
+|	|	|	|	|	|	|	|	|	|	[NEW_
+|	|	|	|	|	|	|	|	|	|	|	(type = VT(Test))
+|	|	|	|	|	|	|	|	|	|	|	(ctor = ()V)
+|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	)
+|	|	|	|	|	|	|	|	|	(generic = VT(dynamic))
+|	|	|	|	|	|	|	|	|	(type = VIRTUAL)
+|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	]
+|	|	|	|	|	|	]
+|	|	|	|	|	]
+|	|	|	|	]
+|	|	|	)
+|	|	]
+|	)
+]

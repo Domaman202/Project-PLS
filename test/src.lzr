@@ -1,0 +1,17 @@
+using "lzr.utils.streamApi"
+
+ia = range(0, 5)
+ra = stream(ia)
+    .custom(::change)
+    .toArray()
+
+func change(container) {
+    len = length(container)
+    result = Array(len)
+    for(i = 0, i < len, i++) {
+        result[i] = container[i] * 7
+    }
+    return result
+}
+
+println(contentToString(ra))

@@ -1,0 +1,117 @@
+[LOAD_CTX_
+|	(modules =)
+|	(NODES:
+|	|	[USE_CTX_
+|	|	|	(modules = pht phtx/pls pht/jvm)
+|	|	|	(NODES:
+|	|	|	|	[CLS_
+|	|	|	|	|	(type = final class)
+|	|	|	|	|	(name = App)
+|	|	|	|	|	(parents = [java.lang.Object])
+|	|	|	|	|	[ANN_STATIC_
+|	|	|	|	|	|	[DEFN_
+|	|	|	|	|	|	|	(type = method)
+|	|	|	|	|	|	|	(name = main)
+|	|	|	|	|	|	|	(desc = ([Ljava/lang/String;)V)
+|	|	|	|	|	|	|	(sign = null)
+|	|	|	|	|	|	|	[PROGN_
+|	|	|	|	|	|	|	|	[LZR_USE
+|	|	|	|	|	|	|	|	|	[VALUE
+|	|	|	|	|	|	|	|	|	|	(type = STRING)
+|	|	|	|	|	|	|	|	|	|	(value = lzr.utils.random)
+|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	[MCALL_
+|	|	|	|	|	|	|	|	|	(method = println(Ljava/lang/Object;)V)
+|	|	|	|	|	|	|	|	|	(instance:
+|	|	|	|	|	|	|	|	|	|	[VALUE
+|	|	|	|	|	|	|	|	|	|	|	(type = CLASS)
+|	|	|	|	|	|	|	|	|	|	|	(value = ru.DmN.pht.io.StdOut)
+|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	)
+|	|	|	|	|	|	|	|	|	(generic = VT(void))
+|	|	|	|	|	|	|	|	|	(type = STATIC)
+|	|	|	|	|	|	|	|	|	[MCALL_
+|	|	|	|	|	|	|	|	|	|	(method = invokeMethod(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)Lcom/kingmang/lazurite/runtime/values/LzrValue;)
+|	|	|	|	|	|	|	|	|	|	(instance:
+|	|	|	|	|	|	|	|	|	|	|	[VALUE
+|	|	|	|	|	|	|	|	|	|	|	|	(type = CLASS)
+|	|	|	|	|	|	|	|	|	|	|	|	(value = ru.DmN.phtx.pls.utils.LzrLibraryLoader)
+|	|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	|	)
+|	|	|	|	|	|	|	|	|	|	(generic = VT(com.kingmang.lazurite.runtime.values.LzrValue))
+|	|	|	|	|	|	|	|	|	|	(type = STATIC)
+|	|	|	|	|	|	|	|	|	|	[VALUE
+|	|	|	|	|	|	|	|	|	|	|	(type = STRING)
+|	|	|	|	|	|	|	|	|	|	|	(value = lzr.utils.random)
+|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	|	[VALUE
+|	|	|	|	|	|	|	|	|	|	|	(type = STRING)
+|	|	|	|	|	|	|	|	|	|	|	(value = random)
+|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	|	[BLOCK_
+|	|	|	|	|	|	|	|	|	|	|	[DEF_
+|	|	|	|	|	|	|	|	|	|	|	|	(type = var)
+|	|	|	|	|	|	|	|	|	|	|	|	[
+|	|	|	|	|	|	|	|	|	|	|	|	|	(name = pht$tmp$1379)
+|	|	|	|	|	|	|	|	|	|	|	|	|	(type = [java.lang.Object)
+|	|	|	|	|	|	|	|	|	|	|	|	|	[NEW_ARR_
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	(type = java.lang.Object)
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	(size:
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	[VALUE
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	(type = INT)
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	(value = 2)
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	)
+|	|	|	|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	|	|	[ASET_
+|	|	|	|	|	|	|	|	|	|	|	|	[GET_
+|	|	|	|	|	|	|	|	|	|	|	|	|	(name = pht$tmp$1379)
+|	|	|	|	|	|	|	|	|	|	|	|	|	(type = var)
+|	|	|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	|	|	|	[VALUE
+|	|	|	|	|	|	|	|	|	|	|	|	|	(type = INT)
+|	|	|	|	|	|	|	|	|	|	|	|	|	(value = 0)
+|	|	|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	|	|	|	[AS_
+|	|	|	|	|	|	|	|	|	|	|	|	|	(type = VT(java.lang.Object))
+|	|	|	|	|	|	|	|	|	|	|	|	|	[VALUE
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	(type = DOUBLE)
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	(value = 1.0)
+|	|	|	|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	|	|	[ASET_
+|	|	|	|	|	|	|	|	|	|	|	|	[GET_
+|	|	|	|	|	|	|	|	|	|	|	|	|	(name = pht$tmp$1379)
+|	|	|	|	|	|	|	|	|	|	|	|	|	(type = var)
+|	|	|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	|	|	|	[VALUE
+|	|	|	|	|	|	|	|	|	|	|	|	|	(type = INT)
+|	|	|	|	|	|	|	|	|	|	|	|	|	(value = 1)
+|	|	|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	|	|	|	[AS_
+|	|	|	|	|	|	|	|	|	|	|	|	|	(type = VT(java.lang.Object))
+|	|	|	|	|	|	|	|	|	|	|	|	|	[VALUE
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	(type = DOUBLE)
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	(value = 100.0)
+|	|	|	|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	|	|	[GET_
+|	|	|	|	|	|	|	|	|	|	|	|	(name = pht$tmp$1379)
+|	|	|	|	|	|	|	|	|	|	|	|	(type = var)
+|	|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	|	]
+|	|	|	|	|	|	|	]
+|	|	|	|	|	|	]
+|	|	|	|	|	]
+|	|	|	|	]
+|	|	|	)
+|	|	]
+|	)
+]

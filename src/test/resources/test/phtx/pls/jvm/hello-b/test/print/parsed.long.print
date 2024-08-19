@@ -1,0 +1,25 @@
+[LOAD_CTX
+|	[USE_CTX
+|	|	(modules = pht phtx/pls pht/jvm)
+|	|	[APP
+|	|	|	[APP_FN
+|	|	|	|	[MCALL
+|	|	|	|	|	[NAME
+|	|	|	|	|	|	(type = NO-STATIC)
+|	|	|	|	|	|	(text = .)
+|	|	|	|	|	]
+|	|	|	|	|	[VALUE
+|	|	|	|	|	|	(type = NAMING)
+|	|	|	|	|	|	(value = main)
+|	|	|	|	|	]
+|	|	|	|	]
+|	|	|	]
+|	|	|	[INC_LZR
+|	|	|	|	[VALUE
+|	|	|	|	|	(type = STRING)
+|	|	|	|	|	(value = src.lzr)
+|	|	|	|	]
+|	|	|	]
+|	|	]
+|	]
+]

@@ -1,0 +1,33 @@
+(load-ctx
+	(use-ctx pht phtx/pls pht/jvm
+		(cls [] App [^java.lang.Object]
+			(@static
+				(defn [] main ^void [[args ^[java.lang.String]]
+					(progn
+						(lzr-use
+							"lzr.utils.random")
+						(inl-body ^void
+							(mcall
+								(fget
+									^java.lang.System
+									out)
+								println
+								(mcall
+									^ru.DmN.phtx.pls.utils.LzrLibraryLoader
+									invokeMethod
+									"lzr.utils.random"
+									"random"
+									(block
+										(def [
+											[^[java.lang.Object pht$tmp$1379 (new-arr ^java.lang.Object 2)]])
+										(aset
+											(get pht$tmp$1379)
+											0
+											(as ^java.lang.Object
+												1.0))
+										(aset
+											(get pht$tmp$1379)
+											1
+											(as ^java.lang.Object
+												100.0))
+										(get pht$tmp$1379)))))))))))

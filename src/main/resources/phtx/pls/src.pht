@@ -1,0 +1,15 @@
+(progn
+    (ns ru.DmN.phtx.pls
+        (cls ExceptionUtils [^Object]
+            (efn ^LzrException getText ^String []
+                (#getMessage this))))
+    (export
+        (import-types "java" [
+            java.util.Map
+            com.kingmang.lazurite.exceptions.LzrException
+            com.kingmang.lazurite.core.Function
+            ru.DmN.phtx.pls.utils.LzrMetaObject
+            ru.DmN.phtx.pls.utils.LzrObjectUtils
+            ru.DmN.phtx.pls.utils.LzrRuntimeUtils
+            ru.DmN.phtx.pls.utils.LzrLibraryLoader])
+        (import "phtx/pls" [[extensions [ru.DmN.phtx.pls.ExceptionUtils]]])))

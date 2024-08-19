@@ -1,0 +1,8 @@
+class Test {
+    func Test() {
+        this.str = "Hi!"
+    }
+}
+
+obj = new Test()
+println(obj.str)

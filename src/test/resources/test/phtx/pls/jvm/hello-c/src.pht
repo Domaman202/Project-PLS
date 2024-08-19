@@ -1,0 +1,3 @@
+(progn
+    (inc-lzr "src.lzr")
+    (app-fn (#main (new ^Test))))
